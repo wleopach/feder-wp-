@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #ffffff;
   min-height: 100vh;
@@ -18,15 +12,36 @@
   color: rgb(80, 72, 72);
 }
 
+.logo-container {
+  display: flex; /* Enable flexbox for container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically (optional) */
+  margin: 0 auto;
+}
+
+.App-logo {
+  height: 40vmin; /* Assuming you want 40% viewport height */
+  pointer-events: none;
+  animation: float-right 2s ease-in-out forwards; /* Animation for logo */
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes float-right {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(-100%); /* Move logo from left outside viewport */
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0); /* Move logo to its position */
+  }
+}
+@media (max-width: 320px) {
+  /* Styles for screens less than 320px wide (very small mobile) */
+  .App-logo {
+    height: 30vmin; /* Adjust logo size for very small screens */
   }
 }

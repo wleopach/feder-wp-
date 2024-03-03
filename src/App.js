@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="logo-container"> {/* New container for logo */}
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <p>
         CREATE THE LIFE YOU ENVISION
         </p>

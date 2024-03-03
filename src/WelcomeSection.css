@@ -53,7 +53,28 @@
     height: 100%;
     stroke: black;
   }
-
+.welcome-section.animate {
+    /* Styles for the animation (e.g., opacity, transform) */
+    opacity: 1; /* Ensure initial opacity is 0 for animation */
+    animation: welcome-animation 1s ease-in-out forwards; /* Animation definition goes here */
+  
+    .welcome-image {
+      transform: translateX(0); /* Remove initial off-screen position */
+    }
+  
+    .welcome-text {
+      transform: translateX(0); /* Remove initial off-screen position */
+    }
+  }
+  
+  @keyframes welcome-animation {
+    from {
+      opacity: 0; /* Start from hidden state */
+    }
+    to {
+      opacity: 1; /* Animate to visible state */
+    }
+  }
   @keyframes image-appear {
     from {
       opacity: 0;
