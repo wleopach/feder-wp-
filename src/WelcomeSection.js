@@ -1,8 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import image_ from "./buterfly.png";
-import "./WelcomeSection.css";
 
 const WelcomeSection = () => {
   const welcomeRef = useRef(null);
@@ -20,7 +23,7 @@ const WelcomeSection = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-20%', // Add some initial offset
+      translateX: '-50%', // Add some initial offset
     },
     visible: {
       opacity: 1,
@@ -38,20 +41,25 @@ const WelcomeSection = () => {
       animate={controls}
     >
       {/* Welcome section content */}
-      <div className="welcome-image">
-        <img src={image_} alt="Welcome Section " style={{ width: '70%' }}/>
-      </div>
-      <div className="welcome-text">
-        <svg className="welcome-line">
-          <line x1="0" y1="0" x2="0" y2="100%" strokeWidth="2" />
-        </svg>
-        <h1>WELCOME!</h1>
-        <p>
-          <b>FPS Health</b> is where science and personal transformation
-          converge. We offer a bespoke journey towards wellness, informed by
-          medical expertise and our commitment to your holistic evolution.
-        </p>
-      </div>
+      <Container>
+        <Row lg={3}>
+          <Col lg={true}>
+            <svg className="welcome-line">
+              <line x1="0" y1="0" x2="0" y2="100%" strokeWidth="2" />
+            </svg>
+            <h1>WELCOME!</h1>
+            <p><b>FPS Health</b> is where science and personal transformation
+                converge. We offer a bespoke journey towards wellness, informed by
+                medical expertise and our commitment to your holistic evolution.
+            </p>
+          </Col>
+          <Col lg={true}>
+            <Image  img src={image_} thumbnail />
+          </Col>
+            
+        </Row>
+      </Container>
+     
     </motion.div>
   );
 };

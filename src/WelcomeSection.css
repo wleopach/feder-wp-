@@ -1,56 +1,5 @@
 .welcome-section {
-    display: flex; /* Keep flexbox for layout */
-    align-items: center; /* Center elements horizontally */
     padding: 4rem;
   }
-  
-  
-  .welcome-text {
-    flex: 1; /* Allow text to fill remaining space */
-    padding: 4rem; /* Add some padding for text */
-    font-size: 3.5vw;
-    position: relative; /* Enable positioning for the pseudo-element */
-   
-  }
-  
-  .welcome-text::before {
-    content: ""; /* Empty content for the pseudo-element */
-    position: absolute; /* Position the element relative to its parent */
-    top: 0; /* Align to top of the parent */
-    height: 100%; /* Set the height to match the parent */
-    background-color: #ddd; /* Set the color of the line */
-  }
-  .welcome-image {
-    /* Order: Move image to the right visually */
-    order: 1;
-    flex: 0 0 80%; /* Set image to take up 80% width */
-    margin: 1rem; /* Add some margin for spacing */
 
-
-
-  }
-
-  
-  .welcome-text h1 {
-    margin-bottom: 0.5rem; /* Adjust spacing between heading and paragraph */
-  }
-
-  .welcome-text {
-    text-align: left; /* Ensure left alignment */
-  }
-
-  /* Similar styles for .welcome-section and .welcome-text */
-
-.welcome-line {
-    position: absolute;
-    top: 0;
-    left: 2%; /* Adjust as needed */
-    height: 100%;
-    stroke: black;
-  }
-/* Media Query for Mobile Screens (adjust breakpoint as needed) */
-@media (max-width: 768px) {
-  .welcome-section {
-    flex-direction: column-reverse; /* Reverse order for mobiles */
-  }
-}
+ 

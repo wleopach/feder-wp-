@@ -1,0 +1,11 @@
+.model-section {
+    padding: 4rem;
+  }
+  
+
+.model-section .Col:first-child h1 {
+    transform: rotate(-90deg); /* Rotate text 90 degrees counter-clockwise */
+    writing-mode: vertical-rl; /* Ensure text reads from bottom to top */
+    color: rgb(19, 18, 18); /* Optional: Set text color for better visibility on background */
+    /* Optional: Adjust other styles for positioning and white-space handling */
+  }

@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import WelcomeSection from './WelcomeSection';
+import Model from './Model';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +16,13 @@ function App() {
         CREATE THE LIFE YOU ENVISION
         </p>
       </header>
-      <WelcomeSection />
+      
+      
+      <WelcomeSection/>
+
+      <Model/>
+      
+      
     </div>
   );
 }
