@@ -20,7 +20,7 @@ const WelcomeSection = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-50%', // Add some initial offset
+      translateX: '-20%', // Add some initial offset
     },
     visible: {
       opacity: 1,
@@ -36,11 +36,10 @@ const WelcomeSection = () => {
       variants={welcomeVariants}
       initial="hidden"
       animate={controls}
-      style={{ transform: 'translateX(-1052.16277px)' }} // Set initial position with CSS
     >
       {/* Welcome section content */}
       <div className="welcome-image">
-        <img src={image_} alt="Welcome Section " />
+        <img src={image_} alt="Welcome Section " style={{ width: '70%' }}/>
       </div>
       <div className="welcome-text">
         <svg className="welcome-line">

@@ -1,35 +1,31 @@
 .welcome-section {
     display: flex; /* Keep flexbox for layout */
-    align-items: center; /* Maintain vertical alignment */
-    padding-left: 10px;
-    padding-right: 50px;
+    align-items: center; /* Center elements horizontally */
+    padding: 4rem;
   }
+  
   
   .welcome-text {
     flex: 1; /* Allow text to fill remaining space */
     padding: 4rem; /* Add some padding for text */
-    font-size: calc(30px + 2vmin);
+    font-size: 3.5vw;
     position: relative; /* Enable positioning for the pseudo-element */
-    opacity: 0; /* Initially hide the text */
-    animation: text-appear 1s ease-in-out forwards; /* Animation for text */
+   
   }
   
   .welcome-text::before {
     content: ""; /* Empty content for the pseudo-element */
     position: absolute; /* Position the element relative to its parent */
     top: 0; /* Align to top of the parent */
-    left: 10px; /* Place it 10px to the left of the parent */
-    width: 3px; /* Set the width of the line */
     height: 100%; /* Set the height to match the parent */
     background-color: #ddd; /* Set the color of the line */
   }
   .welcome-image {
     /* Order: Move image to the right visually */
     order: 1;
-    flex: 0 0 50%; /* Set image to take up 80% width */
+    flex: 0 0 80%; /* Set image to take up 80% width */
     margin: 1rem; /* Add some margin for spacing */
-    opacity: 0; /* Initially hide the image */
-    animation: image-appear 1s ease-in-out forwards; /* Animation for image */
+
 
 
   }
@@ -48,51 +44,13 @@
 .welcome-line {
     position: absolute;
     top: 0;
-    left: 10px; /* Adjust as needed */
-    width: 3px;
+    left: 2%; /* Adjust as needed */
     height: 100%;
     stroke: black;
   }
-.welcome-section.animate {
-    /* Styles for the animation (e.g., opacity, transform) */
-    opacity: 1; /* Ensure initial opacity is 0 for animation */
-    animation: welcome-animation 1s ease-in-out forwards; /* Animation definition goes here */
-  
-    .welcome-image {
-      transform: translateX(0); /* Remove initial off-screen position */
-    }
-  
-    .welcome-text {
-      transform: translateX(0); /* Remove initial off-screen position */
-    }
+/* Media Query for Mobile Screens (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column-reverse; /* Reverse order for mobiles */
   }
-  
-  @keyframes welcome-animation {
-    from {
-      opacity: 0; /* Start from hidden state */
-    }
-    to {
-      opacity: 1; /* Animate to visible state */
-    }
-  }
-  @keyframes image-appear {
-    from {
-      opacity: 0;
-      transform: translateX(-100%); /* Move image from left outside viewport */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Move image to its position */
-    }
-  }
-  
-  @keyframes text-appear {
-    from {
-      opacity: 0;
-      transform: translateX(100%); /* Move text from right outside viewport */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Move text to its position */
-    }
-  }
+}
