@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import image_ from "./buterfly.png";
-
+import "./WelcomeSection.css"
 const WelcomeSection = () => {
   const welcomeRef = useRef(null);
   const controls = useAnimation();
@@ -43,7 +43,7 @@ const WelcomeSection = () => {
       {/* Welcome section content */}
       <Container>
         <Row lg={3}>
-          <Col lg={true}>
+          <Col lg={true} className='long-text'>
             <svg className="welcome-line">
               <line x1="0" y1="0" x2="0" y2="100%" strokeWidth="2" />
             </svg>

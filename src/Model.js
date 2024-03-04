@@ -43,13 +43,14 @@ const Model = () => {
       {/* model section content */}
       <Container>
         <Row lg={3}>
-            <Col lg={true} className='vertical-text'>
+            <Col lg={2} className='vertical-text'>
                 <h1>THE POSITIVE COACHING MODEL</h1>
             </Col>
-            <Col lg={true}>
-                <Image src={image_} thumbnail />
+        
+            <Col lg={3} className='image-plant' >
+                <Image src={image_} thumbnail fluid />
             </Col>
-            <Col lg={true}> 
+            <Col lg={5} className='long-text'> 
             <p><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
                           self-actualization that stands out in a world full of theories which often lack empirical support. PCM encourages
                           self-reflection, guides towards self-determined potential, and exclusively utilizes evidence-based strategies for

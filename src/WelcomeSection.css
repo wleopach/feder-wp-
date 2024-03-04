@@ -1,5 +1,7 @@
-.welcome-section {
-    padding: 4rem;
-  }
 
- 
+  @media (min-width: 768px) {
+    .long-text{
+        font-size: 3vh;
+    }
+
+  }
