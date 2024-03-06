@@ -3,5 +3,23 @@
     .long-text{
         font-size: 3vh;
     }
+    .custom-border {
+      border-left: 1px solid #000; /* Example border styling */
+      height: 100%;
+    }
+    .custom-border.d-flex {
+      display: flex;
+    }
+    
+    .custom-border.justify-content-center {
+      justify-content: center;
+    }
+    
+    .custom-border.align-items-center {
+      align-items: center;
+    }
+    .text-center {
+      text-align: center;
+    }
 
   }

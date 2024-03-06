@@ -14,7 +14,9 @@
       writing-mode: vertical-rl; /* Ensure text reads from bottom to top */
       height: 50vh;
     }
-    
+    .custom-border {
+      border-left: 1px solid #000; /* Example border styling */
+    }
     .image-plant {
       padding-top: "10rem"
     }
@@ -22,4 +24,6 @@
         font-size: 3vh;
     }
 
+ 
+    
   }
