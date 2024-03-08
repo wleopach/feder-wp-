@@ -8,7 +8,7 @@
     /* Optional: Adjust other styles for positioning and white-space handling */
   }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .vertical-text {
       transform: rotate(-180deg); /* Rotate text 90 degrees counter-clockwise */
       writing-mode: vertical-rl; /* Ensure text reads from bottom to top */

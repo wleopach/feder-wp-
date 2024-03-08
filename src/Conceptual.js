@@ -1,13 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
+import BallCanvas from './canvas/Ball';
 import { useInView } from "react-intersection-observer";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import image_ from "./buterfly.png";
-
-const WelcomeSection = () => {
+//import { aws } from './assets'; // Import the named export 'aws'
+import aws from './assets/aws.png'; // Import the image directly
+import relfund from './assets/relfund.png'; // Import the image directly
+import stdis from './assets/stdis.png'; // Import the image directly
+import vsculp from './assets/vsculp.png'; // Import the image directly
+import gstr from './assets/gstr.png'; // Import the image directly
+import revol from './assets/revol.png'; // Import the image directly
+console.log(aws);
+const Conceptual = () => {
   const welcomeRef = useRef(null);
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.5 }); // Observe when 50% visible
@@ -23,7 +29,7 @@ const WelcomeSection = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-50%', // Add some initial offset
+      translateX: '-5%', // Add some initial offset
     },
     visible: {
       opacity: 1,
@@ -42,12 +48,59 @@ const WelcomeSection = () => {
     >
       {/* Welcome section content */}
       <Container>
-        <Row lg={3}>
-          <Col lg={true} className='title-text'>
-  
-          </Col>  
+        <Row >
+          <Col lg={2}>
+          </Col>
+          <Col lg={8} >
+            <div className='custom-border-c'>
+                <div className='title-text'>
+                    <h1>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h1>
+                </div>
+            </div>
+               
+          </Col> 
+          <Col lg={2}>
+          </Col> 
         </Row>
+        
+        <Row style={{ backgroundColor: "#E3E6E0" }} className="mt-1" >
+           <Col>
+            <h2>
+              <b>Empowerment</b> refines and reinforces your growth trajectory
+            </h2>
+            
+           </Col>
+
+           
+        </Row>
+        <Row>
+          <Col>
+            {/* Pass the 'aws' named export as a prop */}
+            <BallCanvas icon={relfund}/>
+          </Col>
+          <Col>
+            {/* Pass the 'aws' named export as a prop */}
+            <BallCanvas icon={stdis}/>
+          </Col>
+          <Col>
+            {/* Pass the 'aws' named export as a prop */}
+            <BallCanvas icon={vsculp}/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            {/* Pass the 'aws' named export as a prop */}
+            <BallCanvas icon={gstr}/>
+          </Col>
+          <Col>
+            {/* Pass the 'aws' named export as a prop */}
+            <BallCanvas icon={revol}/>
+          </Col>
+          
+        </Row>
+
       </Container>
+     
      
     </motion.div>
   );

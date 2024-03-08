@@ -23,7 +23,7 @@ const Model = () => {
   const modelVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-20%', // Add some initial offset
+      translateX: '5%', // Add some initial offset
     },
     visible: {
       opacity: 1,

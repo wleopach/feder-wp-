@@ -2,9 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import WelcomeSection from './WelcomeSection';
 import Model from './Model';
+import Conceptual from './Conceptual';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 function App() {
   return (
     <div className="App">
@@ -22,6 +21,9 @@ function App() {
 
       <Model/>
       
+      <Conceptual/>
+
+
       
     </div>
   );

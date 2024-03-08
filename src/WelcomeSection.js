@@ -23,7 +23,7 @@ const WelcomeSection = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-50%', // Add some initial offset
+      translateX: '-5%', // Add some initial offset
     },
     visible: {
       opacity: 1,
