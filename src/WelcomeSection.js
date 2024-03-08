@@ -58,7 +58,7 @@ const WelcomeSection = () => {
             
           </Col>
           <Col lg={true}>
-            <Image  img src={image_} thumbnail />
+            <Image  src={image_} thumbnail />
           </Col>
             
         </Row>
