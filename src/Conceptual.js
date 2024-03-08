@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './Conceptual.css'
 //import { aws } from './assets'; // Import the named export 'aws'
 import aws from './assets/aws.png'; // Import the image directly
 import relfund from './assets/relfund.png'; // Import the image directly
@@ -74,29 +75,54 @@ const Conceptual = () => {
            
         </Row>
         <Row>
-          <Col>
-            {/* Pass the 'aws' named export as a prop */}
-            <BallCanvas icon={relfund}/>
-          </Col>
-          <Col>
-            {/* Pass the 'aws' named export as a prop */}
-            <BallCanvas icon={stdis}/>
-          </Col>
-          <Col>
-            {/* Pass the 'aws' named export as a prop */}
-            <BallCanvas icon={vsculp}/>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            {/* Pass the 'aws' named export as a prop */}
-            <BallCanvas icon={gstr}/>
-          </Col>
-          <Col>
-            {/* Pass the 'aws' named export as a prop */}
-            <BallCanvas icon={revol}/>
-          </Col>
-          
+            <Col>
+              <div style={{ textAlign: "center" }}>
+                <BallCanvas icon={relfund}/>
+                <p className="text"><b>Understanding</b> mutual expectations and building a trustful rapport.</p>
+              </div>
+            </Col>
+            <Col>
+              <div style={{ textAlign: "center" }}>
+                <BallCanvas icon={stdis}/>
+                <p className="text"><b>Identifying</b> personal strengths coupled with valuable feedback integration.</p>
+              </div>
+            </Col>
+            <Col>
+              <div style={{ textAlign: "center" }}>
+                <BallCanvas icon={vsculp}/>
+                <p className="text"><b>Creating</b> an ideal self blueprint and crafting an aspirational vision.</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div style={{ textAlign: "center" }}>
+                <BallCanvas icon={gstr}/>
+                <p className="text" ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
+              </div>
+            </Col>
+            <Col>
+              <div style={{ textAlign: "center" }}>
+                <BallCanvas icon={revol}/>
+                <p className="text" ><b>Solidifying</b> progress and fostering adaptable partnership growth.</p>
+              </div>
+            </Col>
+          </Row>
+          <Row style={{ backgroundColor: "#E3E6E0" }} className="mt-1" >
+           <Col   lg={true}  md={true} sm={1} className="px-sm-1 mx-sm-1">
+            <h2>
+                <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into
+                practical outcomes.
+            </h2>
+            
+           </Col>
+           <Col  lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1">
+            <h2>
+                  <b>Tracking and Advancing</b> consistently elevates your achievements.
+            </h2>
+            
+           </Col>
+           
         </Row>
 
       </Container>

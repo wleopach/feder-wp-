@@ -5,9 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import image_ from "./assets/plant.png";
-import "./Model.css"
-const Model = () => {
+import image_ from "./assets/kid.png";
+import "./Joining.css"
+const Join = () => {
   const modelRef = useRef(null);
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.5 }); // Observe when 50% visible
@@ -45,22 +45,26 @@ const Model = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1>THE POSITIVE COACHING MODEL</h1>
+                <h1>JOINING FPS HEALTH</h1>
               </div>
             </Col>
         
-            <Col lg={3} className='image-plant' >
-                <Image src={image_} thumbnail fluid style={{ paddingTop: '40%' , paddingBottom: '40%'}} />
-            </Col>
+            
             <Col lg={5}> 
-              <div className= 'long-text' style={{ paddingTop: '15%' }}>
-              <p><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
-                          self-actualization that stands out in a world full of theories which often lack empirical support. PCM encourages
-                          self-reflection, guides towards self-determined potential, and exclusively utilizes evidence-based strategies for
-                          your success and skill development.
+              <div className= 'long-text' style={{ paddingTop: '1%' }}>
+                <h1>BEGIN YOUR TRANSFORMATION TODAY</h1>
+              <p><b>Embark </b> on your journey with
+                                FPS Health. Connect with us
+                                to commence a scientifically
+                                precise, expertly guided quest
+                                for peak well-being.
                 </p>
               </div>
             
+            </Col>
+
+            <Col lg={3} className='image-plant' >
+                <Image src={image_} thumbnail fluid style={{ paddingTop: '4%' , paddingBottom: '4%'}} />
             </Col>
         </Row>
       </Container>
@@ -69,4 +73,4 @@ const Model = () => {
   );
 };
 
-export default Model;
+export default Join;

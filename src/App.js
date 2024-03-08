@@ -1,8 +1,10 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 import WelcomeSection from './WelcomeSection';
 import Model from './Model';
 import Conceptual from './Conceptual';
+import Join from './Joining';
+import Contact from './Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
       
       <Conceptual/>
 
+      <Join/>
+
+      <Contact/>
 
       
     </div>

@@ -1,9 +1,17 @@
+.text {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+
 @media (min-width: 900px) {
  
     .custom-border-c {
       border-bottom: 1px solid #000000; /* Example border styling */
     }
-
+    .text {
+      max-width: 40%;
+    }
     
   
     

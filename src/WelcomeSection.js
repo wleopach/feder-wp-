@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import image_ from "./buterfly.png";
+import image_ from "./assets/buterfly.png";
 import "./WelcomeSection.css"
 const WelcomeSection = () => {
   const welcomeRef = useRef(null);

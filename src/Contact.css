@@ -1,0 +1,29 @@
+.model-section {
+    padding: 4rem;
+  }
+  
+
+.vertical-text {
+    color: rgb(19, 18, 18); /* Optional: Set text color for better visibility on background */
+    /* Optional: Adjust other styles for positioning and white-space handling */
+  }
+
+@media (min-width: 900px) {
+    .vertical-text {
+      transform: rotate(-180deg); /* Rotate text 90 degrees counter-clockwise */
+      writing-mode: vertical-rl; /* Ensure text reads from bottom to top */
+      height: 50vh;
+    }
+    .custom-border {
+      border-left: 1px solid #000; /* Example border styling */
+    }
+    .image-plant {
+      padding-top: "10rem"
+    }
+    .long-text{
+        font-size: 3vh;
+    }
+
+ 
+    
+  }
