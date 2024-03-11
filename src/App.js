@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom';
 import logo from './assets/logo.svg';
 import './App.css';
 import WelcomeSection from './WelcomeSection';
@@ -8,29 +9,44 @@ import Contact from './Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="logo-container"> {/* New container for logo */}
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <p>
-        CREATE THE LIFE YOU ENVISION
-        </p>
-      </header>
-      
-      
-      <WelcomeSection/>
 
-      <Model/>
+    <BrowserRouter>
+    <div className="relative z-0 app">
+      <div className="bg-about bg-cover bg-center bg-no-repeat">
+          <header className="App-header">
+              <div className="logo-container"> {/* New container for logo */}
+                <img src={logo} className="App-logo" alt="logo" />
+              </div>
+              <p>
+              CREATE THE LIFE YOU ENVISION
+              </p>
+            </header>
+      </div>
       
-      <Conceptual/>
+      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+          <WelcomeSection/>
+      </div>
 
-      <Join/>
+      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+          <Model/>
+      </div>
 
-      <Contact/>
+      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+          <Conceptual/>
+      </div>
 
-      
+          <Join/>
+
     </div>
+
+    <div className="relative z-0">
+          <Contact />
+        </div>
+    </BrowserRouter>
+    
+      
+      
+    
   );
 }
 

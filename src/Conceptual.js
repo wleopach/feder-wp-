@@ -35,7 +35,7 @@ const Conceptual = () => {
     visible: {
       opacity: 1,
       translateX: '0', // Move element to its original position
-      transition: { duration: 1 }, // Set animation duration
+      transition: { duration: 0.5 }, // Set animation duration
     },
   };
 
@@ -54,7 +54,7 @@ const Conceptual = () => {
           </Col>
           <Col lg={8} >
             <div className='custom-border-c'>
-                <div className='title-text'>
+                <div className='title-text text-center d-flex justify-content-center align-items-center'>
                     <h1>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h1>
                 </div>
             </div>
@@ -66,15 +66,17 @@ const Conceptual = () => {
         
         <Row style={{ backgroundColor: "#E3E6E0" }} className="mt-1" >
            <Col>
+           <div className='title-text text-center d-flex justify-content-center align-items-center'>
             <h2>
               <b>Empowerment</b> refines and reinforces your growth trajectory
             </h2>
-            
+            </div>
            </Col>
 
            
         </Row>
         <Row>
+
             <Col>
               <div style={{ textAlign: "center" }}>
                 <BallCanvas icon={relfund}/>
@@ -107,23 +109,27 @@ const Conceptual = () => {
                 <p className="text" ><b>Solidifying</b> progress and fostering adaptable partnership growth.</p>
               </div>
             </Col>
+            
           </Row>
-          <Row style={{ backgroundColor: "#E3E6E0" }} className="mt-1" >
-           <Col   lg={true}  md={true} sm={1} className="px-sm-1 mx-sm-1">
-            <h2>
-                <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into
-                practical outcomes.
-            </h2>
-            
-           </Col>
-           <Col  lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1">
-            <h2>
-                  <b>Tracking and Advancing</b> consistently elevates your achievements.
-            </h2>
-            
-           </Col>
-           
-        </Row>
+          <Row  className="mt-1">
+              <Col style={{ 
+              background: `linear-gradient(-180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
+              backgroundColor: "#E3E6E0" // Setting the background color to the same color
+                       }}lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
+                  <h2>
+                      <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into practical outcomes.
+                  </h2>
+              </Col>
+              <Col  style={{ 
+              background: `linear-gradient(180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
+              backgroundColor: "#E3E6E0" // Setting the background color to the same color
+                       }}lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
+                  <h2>
+                      <b>Tracking and Advancing</b> consistently elevates your achievements.
+                  </h2>
+              </Col>
+          </Row>
+
 
       </Container>
      
