@@ -106,23 +106,27 @@ const Conceptual = () => {
             </Col>
             
           </Row>
-          <Row  className="mt-1">
-              <Col style={{ 
+          <Row className="mt-1">
+        <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <div style={{ 
               background: `linear-gradient(-180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
               backgroundColor: "#E3E6E0" // Setting the background color to the same color
-                       }}lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-                  <h2 className={styles.sectionHeadText}>
-                      <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into practical outcomes.
-                  </h2>
-              </Col>
-              <Col  style={{ 
-              background: `linear-gradient(180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
-              backgroundColor: "#E3E6E0" // Setting the background color to the same color
-                       }}lg={true} md={true} sm={1} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-                  <h2 className={styles.sectionHeadText}>
-                      <b>Tracking and Advancing</b> consistently elevates your achievements.
-                  </h2>
-              </Col>
+            }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
+              <h2 className={styles.sectionHeadText}>
+                <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into practical outcomes.
+              </h2>
+            </div>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <div style={{ 
+            background: `linear-gradient(180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
+            backgroundColor: "#E3E6E0" // Setting the background color to the same color
+          }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
+            <h2 className={styles.sectionHeadText}>
+              <b>Tracking and Advancing</b> consistently elevates your achievements.
+            </h2>
+          </div>
+        </Col>
           </Row>
 
 
