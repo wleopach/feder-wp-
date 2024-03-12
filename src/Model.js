@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import image_ from "./assets/plant.png";
+import styles from './styles';
 import "./Model.css"
 const Model = () => {
   const modelRef = useRef(null);
@@ -45,7 +46,7 @@ const Model = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1>THE POSITIVE COACHING MODEL</h1>
+                <h1 className={styles.heroHeadText}>THE POSITIVE COACHING MODEL</h1>
               </div>
             </Col>
         
@@ -53,8 +54,8 @@ const Model = () => {
                 <Image src={image_} thumbnail fluid style={{ paddingTop: '40%' , paddingBottom: '40%'}} />
             </Col>
             <Col lg={5}> 
-              <div className= 'long-text' style={{ paddingTop: '15%' }}>
-              <p><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
+              <div style={{ paddingTop: '15%' }}>
+              <p className={styles.sectionSubText}><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
                           self-actualization that stands out in a world full of theories which often lack empirical support. PCM encourages
                           self-reflection, guides towards self-determined potential, and exclusively utilizes evidence-based strategies for
                           your success and skill development.

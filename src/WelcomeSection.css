@@ -1,4 +1,7 @@
 
+.welcome-section{
+  padding: 4rem;
+}
   @media (min-width: 900px) {
     .long-text{
         font-size: 3vh;

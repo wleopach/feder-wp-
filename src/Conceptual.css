@@ -1,9 +1,7 @@
-.text {
-  max-width: 70%;
-  margin: 0 auto;
+conceptual-section{
+  padding: 6rem;
+  
 }
-
-
 @media (min-width: 900px) {
  
     .custom-border-c {

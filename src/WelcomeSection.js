@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import image_ from "./assets/buterfly.png";
+import styles from './styles';
 import "./WelcomeSection.css"
 const WelcomeSection = () => {
   const welcomeRef = useRef(null);
@@ -43,12 +44,14 @@ const WelcomeSection = () => {
       {/* Welcome section content */}
       <Container>
         <Row lg={3}>
-          <Col lg={true} className='long-text'>
-          <div className="custom-border d-flex justify-content-center align-items-center">
+          <Col lg={1} sm={0} md ={0}>
+          </Col>
+          <Col lg={true} >
+          <div className="custom-border">
                 
-            <div className="text-center" style={{ paddingTop: '15%' }}>
-            <h1>WELCOME!</h1>
-                  <p><b>FPS Health</b> is where science and personal transformation
+            <div style={{ paddingTop: '15%' }}>
+            <h1 className={styles.heroHeadText}>WELCOME!</h1>
+                  <p className={styles.sectionSubText}><b>FPS Health</b> is where science and personal transformation
                       converge. We offer a bespoke journey towards wellness, informed by
                       medical expertise and our commitment to your holistic evolution.
                   </p>
@@ -57,7 +60,7 @@ const WelcomeSection = () => {
           </div>
             
           </Col>
-          <Col lg={true}>
+          <Col lg={true} className="d-flex justify-content-center align-items-center">
             <Image  src={image_} thumbnail />
           </Col>
             

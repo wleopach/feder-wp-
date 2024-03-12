@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import styles from './styles';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -48,12 +49,12 @@ const Contact = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1>CONTACT</h1>
+                <h1 className={styles.heroHeadText}>CONTACT</h1>
               </div>
             </Col>
             <Col lg={3}> 
                 <div className="contact-info">
-                    <h2>Contact Information</h2>
+                    <h2 className={styles.sectionHeadText}>Contact Information</h2>
                     <ul>
                         <li><FontAwesomeIcon icon={faEnvelope} />federico.97@live.com</li>
                         <li><FontAwesomeIcon icon={faInstagram} /> <a href="https://www.instagram.com/your_account">@fps.health</a></li>

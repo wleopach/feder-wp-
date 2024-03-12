@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import image_ from "./assets/kid.png";
-import "./Joining.css"
+import styles from './styles';
+import "./Joining.css";
 const Join = () => {
   const modelRef = useRef(null);
   const controls = useAnimation();
@@ -35,7 +36,7 @@ const Join = () => {
   return (
     <motion.div
       ref={ref}
-      className="model-section"
+      className="joinig-section"
       variants={modelVariants}
       initial="hidden"
       animate={controls}
@@ -45,15 +46,15 @@ const Join = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1>JOINING FPS HEALTH</h1>
+                <h1 className={styles.heroHeadText}>JOINING FPS HEALTH</h1>
               </div>
             </Col>
         
             
             <Col lg={5}> 
-              <div className= 'long-text' style={{ paddingTop: '1%' }}>
-                <h1>BEGIN YOUR TRANSFORMATION TODAY</h1>
-              <p><b>Embark </b> on your journey with
+              <div style={{ paddingTop: '1%' }}>
+                <h1 className={styles.heroHeadText}>BEGIN YOUR TRANSFORMATION TODAY</h1>
+              <p className={styles.sectionSubText}><b>Embark </b> on your journey with
                                 FPS Health. Connect with us
                                 to commence a scientifically
                                 precise, expertly guided quest
