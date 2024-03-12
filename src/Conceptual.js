@@ -31,12 +31,12 @@ const Conceptual = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-2%', // Add some initial offset
+      translateX: '-5%', // Add some initial offset
     },
     visible: {
       opacity: 1,
       translateX: '0', // Move element to its original position
-      transition: { duration: 0.5 }, // Set animation duration
+      transition: { duration: 1 }, // Set animation duration
     },
   };
 
@@ -45,7 +45,7 @@ const Conceptual = () => {
       ref={ref}
       className="conceptual-section"
       variants={welcomeVariants}
-      initial="hidden"
+      initial="visible"
       animate={controls}
     >
       {/* Welcome section content */}
@@ -91,7 +91,7 @@ const Conceptual = () => {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row lg={2}>
             <Col xs={12} sm={6} md={4} lg={6} xl={4}>
               <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={gstr}/>
