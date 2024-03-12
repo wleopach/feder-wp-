@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/feder-wp-/static/css/main.3fef3f0a.css",
-    "main.js": "/feder-wp-/static/js/main.cfafe521.js",
+    "main.js": "/feder-wp-/static/js/main.bbbaf521.js",
     "static/js/453.9625c772.chunk.js": "/feder-wp-/static/js/453.9625c772.chunk.js",
     "static/media/kid.png": "/feder-wp-/static/media/kid.334aabc7453626fadf05.png",
     "static/media/buterfly.png": "/feder-wp-/static/media/buterfly.6020f9ff446ce6a3aa9d.png",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/feder-wp-/static/media/logo.e9de94a5299a522ad805ed8867f31ded.svg",
     "index.html": "/feder-wp-/index.html",
     "main.3fef3f0a.css.map": "/feder-wp-/static/css/main.3fef3f0a.css.map",
-    "main.cfafe521.js.map": "/feder-wp-/static/js/main.cfafe521.js.map",
+    "main.bbbaf521.js.map": "/feder-wp-/static/js/main.bbbaf521.js.map",
     "453.9625c772.chunk.js.map": "/feder-wp-/static/js/453.9625c772.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3fef3f0a.css",
-    "static/js/main.cfafe521.js"
+    "static/js/main.bbbaf521.js"
   ]
 }
