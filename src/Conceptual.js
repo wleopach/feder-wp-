@@ -31,7 +31,7 @@ const Conceptual = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-5%', // Add some initial offset
+      translateX: '-2%', // Add some initial offset
     },
     visible: {
       opacity: 1,
@@ -61,7 +61,7 @@ const Conceptual = () => {
          
         </Row>
         
-        <Row style={{ backgroundColor: "#E3E6E0" }} className="mt-1" >
+        <Row style={{ backgroundColor: "#E3E6E0" , paddingLeft: "10px"}} className="mt-1" >
            <div className='title-text text-center d-flex justify-content-center align-items-center'>
             <h2 className={styles.sectionHeadText}>
               <b>Empowerment</b> refines and reinforces your growth trajectory
@@ -73,19 +73,19 @@ const Conceptual = () => {
         <Row>
 
             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "20px" }}>
+              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={relfund}/>
                 <p className={styles.sectionSubText}><b>Understanding</b> mutual expectations and building a trustful rapport.</p>
               </div>
             </Col>
             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "20px" }}>
+              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={stdis}/>
                 <p className={styles.sectionSubText}><b>Identifying</b> personal strengths coupled with valuable feedback integration.</p>
               </div>
             </Col>
             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "20px" }}>
+              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={vsculp}/>
                 <p className={styles.sectionSubText}><b>Creating</b> an ideal self blueprint and crafting an aspirational vision.</p>
               </div>
@@ -93,13 +93,13 @@ const Conceptual = () => {
           </Row>
           <Row>
             <Col xs={12} sm={6} md={4} lg={6} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "20px" }}>
+              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={gstr}/>
                 <p className={styles.sectionSubText} ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
               </div>
             </Col>
             <Col xs={12} sm={6} md={4} lg={6} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "20px" }}>
+              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
                 <BallCanvas icon={revol}/>
                 <p className={styles.sectionSubText} ><b>Solidifying</b> progress and fostering adaptable partnership growth.</p>
               </div>

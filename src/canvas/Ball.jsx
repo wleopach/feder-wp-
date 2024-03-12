@@ -38,7 +38,12 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} position0={0} />
+        <OrbitControls enableZoom={false} 
+         minPolarAngle={Math.PI / 2}  // Restrict vertical movement
+         maxPolarAngle={Math.PI / 2}  // Restrict vertical movement
+         minAzimuthAngle={-Math.PI / 4}  // Restrict horizontal movement
+         maxAzimuthAngle={Math.PI / 4}  // Restrict horizontal movement
+        position0={0} />
         <Ball imgUrl={icon} />
       </Suspense>
 

@@ -15,8 +15,3 @@
     
 }
 
-@media (max-width: 376px) { /* Adjust the max-width as needed for your target devices */
-  .conceptual-section {
-    padding: 0; /* Remove padding for smaller devices */
-  }
-}
