@@ -46,7 +46,13 @@ const Navbar = () => {
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+                    {nav.title === 'Contact' ? (
+                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                  ) : (
+                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`}>  {/* Dynamic path handling */}
+                      {nav.title}
+                    </Link>
+                  )}
             </li>
           ))}
         </ul>
@@ -72,17 +78,19 @@ const Navbar = () => {
                 items-start justify-end mt-[10rem] -ml-[35px]">
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    } hover:text-taupe text-[21px] font-medium font-mova 
+                      uppercase tracking-[3px] cursor-pointer nav-links`}
+                   onClick={() => setActive(nav.title)}>
+                         {nav.title === 'Contact' ? (
+                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                  ) : (
+                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`}>  {/* Dynamic path handling */}
+                      {nav.title}
+                    </Link>
+                  )}
                   </li>
                 ))}
               </ul>

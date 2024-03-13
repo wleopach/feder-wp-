@@ -11,6 +11,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import image_ from "./assets/logo.svg";
 import "./Contact.css"
+import { SectionWrapper } from './hoc';
 const Contact = () => {
   const modelRef = useRef(null);
   const controls = useAnimation();
@@ -52,7 +53,7 @@ const Contact = () => {
                 <h2 className={styles.sectionHeadText}>CONTACT</h2>
               </div>
             </Col>
-            <Col lg={4}> 
+            <Col lg={6}> 
                 <div className="contact-info">
                     <h2 className={styles.sectionHeadTextLight}>Contact Information</h2>
                     <ul>
@@ -68,7 +69,7 @@ const Contact = () => {
             
             </Col>
 
-            <Col lg={5} className='image-plant' >
+            <Col lg={4} className='image-plant' >
                 <Image src={image_} thumbnail fluid style={{ paddingTop: '10%' , paddingBottom: '10%'}} />
             </Col>
         </Row>
@@ -78,4 +79,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default SectionWrapper(Contact, 'contact');
