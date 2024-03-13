@@ -18,7 +18,7 @@ console.log(aws);
 const Conceptual = () => {
   const welcomeRef = useRef(null);
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 }); // Observe when 50% visible
+  const [ref, inView] = useInView({ threshold: 0.75 }); // Observe when 50% visible
 
   useEffect(() => {
     if (inView) {
