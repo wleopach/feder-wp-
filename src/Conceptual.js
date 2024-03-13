@@ -36,7 +36,7 @@ const Conceptual = () => {
     visible: {
       opacity: 1,
       translateX: '0', // Move element to its original position
-      transition: { duration: 1 }, // Set animation duration
+      transition: { duration: 0.2 }, // Set animation duration
     },
   };
 
