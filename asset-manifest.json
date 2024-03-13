@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/feder-wp-/static/css/main.3fef3f0a.css",
-    "main.js": "/feder-wp-/static/js/main.bbbaf521.js",
+    "main.css": "/feder-wp-/static/css/main.faf80adc.css",
+    "main.js": "/feder-wp-/static/js/main.c12d3f40.js",
     "static/js/453.9625c772.chunk.js": "/feder-wp-/static/js/453.9625c772.chunk.js",
     "static/media/kid.png": "/feder-wp-/static/media/kid.334aabc7453626fadf05.png",
     "static/media/buterfly.png": "/feder-wp-/static/media/buterfly.6020f9ff446ce6a3aa9d.png",
+    "static/media/overcame-outline.woff": "/feder-wp-/static/media/overcame-outline.e4685dc83777a33af73c.woff",
+    "static/media/overcame-bold.woff": "/feder-wp-/static/media/overcame-bold.1cbb476d06fa64bc5ee2.woff",
     "static/media/plant.png": "/feder-wp-/static/media/plant.88b9e8cf08134c75885c.png",
     "static/media/logo.svg": "/feder-wp-/static/media/logo.e9de94a5299a522ad805ed8867f31ded.svg",
+    "static/media/beckman.otf": "/feder-wp-/static/media/beckman.488200807fbe24510023.otf",
+    "static/media/logo.png": "/feder-wp-/static/media/logo.9695f41f110921ca7118.png",
+    "static/media/logo-text-black.png": "/feder-wp-/static/media/logo-text-black.2ff010a757a4f66f2101.png",
+    "static/media/mova.otf": "/feder-wp-/static/media/mova.707cfc3dbae1078dc46e.otf",
+    "static/media/arenq.otf": "/feder-wp-/static/media/arenq.9e75b52c3613e6e8a4e8.otf",
     "index.html": "/feder-wp-/index.html",
-    "main.3fef3f0a.css.map": "/feder-wp-/static/css/main.3fef3f0a.css.map",
-    "main.bbbaf521.js.map": "/feder-wp-/static/js/main.bbbaf521.js.map",
+    "main.faf80adc.css.map": "/feder-wp-/static/css/main.faf80adc.css.map",
+    "main.c12d3f40.js.map": "/feder-wp-/static/js/main.c12d3f40.js.map",
     "453.9625c772.chunk.js.map": "/feder-wp-/static/js/453.9625c772.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fef3f0a.css",
-    "static/js/main.bbbaf521.js"
+    "static/css/main.faf80adc.css",
+    "static/js/main.c12d3f40.js"
   ]
 }
