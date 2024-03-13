@@ -36,7 +36,9 @@ const Ball = (props) => {
 };
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas frameloop="always"
+     gl={{ preserveDrawingBuffer: true }}
+     >
       <Suspense fallback={<Loader />}>
         <OrbitControls enableZoom={false} 
          minPolarAngle={Math.PI / 2}  // Restrict vertical movement

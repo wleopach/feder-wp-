@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import logo from './assets/logo.svg';
 import './App.css';
+import Navbar from './Navbar';
 import WelcomeSection from './WelcomeSection';
 import Model from './Model';
 import Conceptual from './Conceptual';
@@ -11,9 +12,13 @@ function App() {
   return (
 
     <BrowserRouter>
-    <div className="relative z-0 app">
-      <div className="bg-about bg-cover bg-center bg-no-repeat">
-          <header className="App-header">
+   
+    <div className="relative z-0 ">
+      <div>
+        <Navbar/>
+      </div>
+      <div>
+          <header className="App-header font-mova">
               <div className="logo-container"> {/* New container for logo */}
                 <img src={logo} className="App-logo" alt="logo" />
               </div>
@@ -23,19 +28,21 @@ function App() {
             </header>
       </div>
       
-      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+      <div className="pb-10">
           <WelcomeSection/>
       </div>
 
-      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+      <div className="pb-10">
           <Model/>
       </div>
 
-      <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+      <div className="pb-10">
           <Conceptual/>
       </div>
 
+      <div className="pb-10">
           <Join/>
+      </div>
 
     </div>
 

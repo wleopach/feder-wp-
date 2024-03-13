@@ -46,14 +46,14 @@ const Join = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1 className={styles.heroHeadText}>JOINING FPS HEALTH</h1>
+                <h2 className={styles.sectionHeadText}>JOINING FPS HEALTH</h2>
               </div>
             </Col>
         
             
-            <Col lg={5}> 
+            <Col lg={6}> 
               <div style={{ paddingTop: '1%' }}>
-                <h1 className={styles.heroHeadText}>BEGIN YOUR TRANSFORMATION TODAY</h1>
+                <h3 className={styles.sectionHeadTextLight}>BEGIN YOUR TRANSFORMATION TODAY</h3>
               <p className={styles.sectionSubText}><b>Embark </b> on your journey with
                                 FPS Health. Connect with us
                                 to commence a scientifically

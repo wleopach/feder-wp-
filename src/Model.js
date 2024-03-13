@@ -45,13 +45,13 @@ const Model = () => {
       <Container>
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
-                <div className="custom-border">
-                <h1 className={styles.heroHeadText}>THE POSITIVE COACHING MODEL</h1>
+                <div className="custom-border font-mova">
+                <h2 className={styles.sectionHeadText}>THE POSITIVE COACHING MODEL</h2>
               </div>
             </Col>
         
             <Col lg={3} className='image-plant' >
-                <Image src={image_} thumbnail fluid style={{ paddingTop: '40%' , paddingBottom: '40%'}} />
+                <Image src={image_} fluid style={{ paddingTop: '40%' , paddingBottom: '40%'}} />
             </Col>
             <Col lg={5}> 
               <div style={{ paddingTop: '15%' }}>

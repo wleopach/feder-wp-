@@ -47,7 +47,7 @@ const WelcomeSection = () => {
           <Col lg={1} sm={0} md ={0}>
           </Col>
           <Col lg={true} >
-          <div className="custom-border">
+          <div className="custom-border font-mova">
                 
             <div style={{ paddingTop: '15%' }}>
             <h1 className={styles.heroHeadText}>WELCOME!</h1>

@@ -31,7 +31,7 @@ const Conceptual = () => {
   const welcomeVariants = {
     hidden: {
       opacity: 0,
-      translateX: '-5%', // Add some initial offset
+      translateX: '-1%', // Add some initial offset
     },
     visible: {
       opacity: 1,
@@ -43,18 +43,18 @@ const Conceptual = () => {
   return (
     <motion.div
       ref={ref}
-      className="conceptual-section"
+      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       variants={welcomeVariants}
-      initial="visible"
+      initial="hidden"
       animate={controls}
     >
       {/* Welcome section content */}
-      <Container>
+      <Container className="px-1">
         <Row >
          
             <div className='custom-border-c'>
                 <div className='title-text text-center d-flex justify-content-center align-items-center'>
-                    <h1 className={styles.heroHeadText}>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h1>
+                    <h2 className={styles.sectionHeadText}>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h2>
                 </div>
             </div>
                
@@ -62,47 +62,83 @@ const Conceptual = () => {
         </Row>
         
         <Row style={{ backgroundColor: "#E3E6E0" , paddingLeft: "10px"}} className="mt-1" >
-           <div className='title-text text-center d-flex justify-content-center align-items-center'>
-            <h2 className={styles.sectionHeadText}>
+           <div className='text-center d-flex justify-content-center align-items-center'>
+            <p className={styles.sectionSubText}>
               <b>Empowerment</b> refines and reinforces your growth trajectory
-            </h2>
+            </p>
             </div>
 
            
         </Row>
         <Row>
 
-            <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
+            <Col xs={6} sm={6} md={4} lg={4} xl={4} >
+            <div className="flex flex-wrap justify-center gap-10 mt-14">
+              
+              <div className="w-28 h-28">
                 <BallCanvas icon={relfund}/>
-                <p className={styles.sectionSubText}><b>Understanding</b> mutual expectations and building a trustful rapport.</p>
-              </div>
+                </div>
+                <p className={`${styles.sectionSubText} text-center`} ><b>Understanding</b> mutual
+                                                                                            expectations and
+                                                                                            building a trustful
+                                                                                            rapport.</p>
+              
+            </div>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
+            <Col xs={6} sm={6} md={4} lg={4} xl={4}>
+            <div className="flex flex-wrap justify-center gap-10 mt-14">
+              
+              <div className="w-28 h-28">
                 <BallCanvas icon={stdis}/>
-                <p className={styles.sectionSubText}><b>Identifying</b> personal strengths coupled with valuable feedback integration.</p>
-              </div>
+                </div>
+                <p className={`${styles.sectionSubText} text-center`} ><b>Identifying</b> personal
+                                                                                          strengths coupled
+                                                                                          with valuable
+                                                                                          feedback
+                                                                                          integration.</p>
+              
+            </div>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
+            <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+              <div className=" flex flex-wrap justify-center gap-10 mt-14">
+              
+              <div className="w-28 h-28">
                 <BallCanvas icon={vsculp}/>
-                <p className={styles.sectionSubText}><b>Creating</b> an ideal self blueprint and crafting an aspirational vision.</p>
-              </div>
+                </div>
+                <p className={`${styles.sectionSubText} text-center`} ><b>Creating</b> an ideal
+                                                                                        self blueprint and
+                                                                                        crafting an
+                                                                                        aspirational
+                                                                                        vision.</p>
+              
+            </div>
             </Col>
           </Row>
           <Row lg={2}>
-            <Col xs={12} sm={6} md={4} lg={6} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
+            <Col xs={6} sm={6} md={6} lg={6} xl={6}>
+            <div className="flex flex-wrap justify-center gap-10 mt-14">
+              
+              <div className="w-28 h-28">
                 <BallCanvas icon={gstr}/>
-                <p className={styles.sectionSubText} ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
-              </div>
+                </div>
+                <p className={`${styles.sectionSubText} text-center`} ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
+              
+            </div>
+              
             </Col>
-            <Col xs={12} sm={6} md={4} lg={6} xl={4}>
-              <div style={{ textAlign: "center", paddingLeft: "10px" }}>
+            <Col xs={6} sm={6}  md={6} lg={6} xl={6}>
+            <div className="flex flex-wrap justify-center gap-10 mt-14">
+              
+              <div className="w-28 h-28">
                 <BallCanvas icon={revol}/>
-                <p className={styles.sectionSubText} ><b>Solidifying</b> progress and fostering adaptable partnership growth.</p>
-              </div>
+                </div>
+                <p className={`${styles.sectionSubText} text-center`} ><b>Solidifying</b> progress and
+                                                                                          fostering
+                                                                                          adaptable
+                                                                                          partnership
+                                                                                          growth.</p>
+              
+            </div>
             </Col>
             
           </Row>
@@ -112,9 +148,9 @@ const Conceptual = () => {
               background: `linear-gradient(-180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
               backgroundColor: "#E3E6E0" // Setting the background color to the same color
             }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-              <h2 className={styles.sectionHeadText}>
+              <h3 className={styles.sectionSubText}>
                 <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into practical outcomes.
-              </h2>
+              </h3>
             </div>
         </Col>
         <Col xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -122,9 +158,9 @@ const Conceptual = () => {
             background: `linear-gradient(180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
             backgroundColor: "#E3E6E0" // Setting the background color to the same color
           }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-            <h2 className={styles.sectionHeadText}>
+            <h3 className={styles.sectionSubText}>
               <b>Tracking and Advancing</b> consistently elevates your achievements.
-            </h2>
+            </h3>
           </div>
         </Col>
           </Row>

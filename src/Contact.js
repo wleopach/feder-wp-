@@ -49,12 +49,12 @@ const Contact = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border">
-                <h1 className={styles.heroHeadText}>CONTACT</h1>
+                <h2 className={styles.sectionHeadText}>CONTACT</h2>
               </div>
             </Col>
-            <Col lg={3}> 
+            <Col lg={4}> 
                 <div className="contact-info">
-                    <h2 className={styles.sectionHeadText}>Contact Information</h2>
+                    <h2 className={styles.sectionHeadTextLight}>Contact Information</h2>
                     <ul>
                         <li><FontAwesomeIcon icon={faEnvelope} />federico.97@live.com</li>
                         <li><FontAwesomeIcon icon={faInstagram} /> <a href="https://www.instagram.com/your_account">@fps.health</a></li>
