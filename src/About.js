@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <h1>About Us</h1>
-      <p>Welcome to our website! We are...</p>
+      <p>Welcome to our website! We are FPS-HEALTH</p>
       {/* Additional content about your company or website */}
     </div>
   );
