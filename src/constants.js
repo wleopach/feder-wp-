@@ -1,5 +1,6 @@
 const navLinks = [
-    {
+ 
+   {
       id: 'about',
       title: 'About',
     },
@@ -10,3 +11,4 @@ const navLinks = [
   ];
 
 export default navLinks
+

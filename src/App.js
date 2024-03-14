@@ -14,14 +14,16 @@ function App() {
   return (
 
     <HashRouter>
-   <Routes>
+      <div>
+        <Navbar/>
+      </div>
+     <Routes>
+    
         {/* This route renders all your homepage content */}
-      <Route path="/" element={
+      <Route path="/"  element={
         <>
                     <div className="relative z-0 ">
-                      <div>
-                        <Navbar/>
-                      </div>
+                      
                       <div>
                           <header className="App-header font-mova">
                               <div className="logo-container"> {/* New container for logo */}
@@ -52,18 +54,18 @@ function App() {
                     </div>
 
                     <div className="relative z-0">
-                          <Contact />
+                          <Contact id="contact" />
                     </div>
       </>
         } />
       <Route path="/About" element={
         <>
         <div className="relative z-0 ">
-                      <div>
-                        <Navbar/>
-                        
-                      </div>
-                      <About/>
+                      
+            <div className="pb-10">
+                <About/>
+            </div>
+                      
 
         </div>
 

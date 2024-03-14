@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styles  from './styles';
 import navLinks  from './constants';
 import logo from './assets/logo.png';
@@ -47,9 +47,9 @@ const Navbar = () => {
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
                     {nav.title === 'Contact' ? (
-                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                    <Link to={`/#${nav.id}`} smooth>{nav.title}</Link>
                   ) : (
-                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`}>  {/* Dynamic path handling */}
+                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`} smooth>  {/* Dynamic path handling */}
                       {nav.title}
                     </Link>
                   )}
@@ -84,10 +84,10 @@ const Navbar = () => {
                     } hover:text-taupe text-[21px] font-medium font-mova 
                       uppercase tracking-[3px] cursor-pointer nav-links`}
                    onClick={() => setActive(nav.title)}>
-                         {nav.title === 'Contact' ? (
-                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                    {nav.title === 'Contact' ? (
+                    <Link to={`/#${nav.id}`} smooth>{nav.title}</Link>
                   ) : (
-                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`}>  {/* Dynamic path handling */}
+                    <Link to={nav.title === 'About' ? '/about' : `/#${nav.id}`} smooth>  {/* Dynamic path handling */}
                       {nav.title}
                     </Link>
                   )}
