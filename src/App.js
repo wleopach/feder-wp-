@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route  } from 'react-router-dom';
+import { HashRouter, Routes, Route  } from 'react-router-dom';
 import logo from './assets/logo.svg';
 import './App.css';
 import Navbar from './Navbar';
@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
 
-    <BrowserRouter>
+    <HashRouter>
    <Routes>
         {/* This route renders all your homepage content */}
       <Route path="/" element={
@@ -71,7 +71,7 @@ function App() {
         } />
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
     
       
       
