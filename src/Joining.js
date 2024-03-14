@@ -11,7 +11,7 @@ import "./Joining.css";
 const Join = () => {
   const modelRef = useRef(null);
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 }); // Observe when 50% visible
+  const [ref, inView] = useInView({ threshold:  0.25 }); // Observe when 50% visible
 
   useEffect(() => {
     if (inView) {
