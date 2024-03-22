@@ -43,18 +43,18 @@ const Conceptual = () => {
   return (
     <motion.div
       ref={ref}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      className={`${styles.padding} ${styles.flexCenter} max-w-7xl mx-auto relative z-0`}
       variants={welcomeVariants}
       initial="hidden"
       animate={controls}
     >
       {/* Welcome section content */}
-      <Container className="px-1">
+      <Container className="px-3">
         <Row >
          
             <div className='custom-border-c'>
                 <div className='title-text text-center d-flex justify-content-center align-items-center'>
-                    <h2 className={styles.sectionHeadText}>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h2>
+                    <h2 className={styles.heroHeadText}>SCULPTING THE FRAMEWORK FOR YOUR BEST SELF</h2>
                 </div>
             </div>
                
@@ -63,7 +63,7 @@ const Conceptual = () => {
         
         <Row style={{ backgroundColor: "#E3E6E0" , paddingLeft: "10px"}} className="mt-1" >
            <div className='text-center d-flex justify-content-center align-items-center'>
-            <p className={styles.sectionSubText}>
+            <p className={styles.heroSubText}>
               <b>Empowerment</b> refines and reinforces your growth trajectory
             </p>
             </div>
@@ -78,7 +78,7 @@ const Conceptual = () => {
               <div className="w-28 h-28">
                 <BallCanvas icon={relfund}/>
                 </div>
-                <p className={`${styles.sectionSubText} text-center`} ><b>Understanding</b> mutual
+                <p className={`${styles.heroSubText} text-center`} ><b>Understanding</b> mutual
                                                                                             expectations and
                                                                                             building a trustful
                                                                                             rapport.</p>
@@ -91,7 +91,7 @@ const Conceptual = () => {
               <div className="w-28 h-28">
                 <BallCanvas icon={stdis}/>
                 </div>
-                <p className={`${styles.sectionSubText} text-center`} ><b>Identifying</b> personal
+                <p className={`${styles.heroSubText} text-center`} ><b>Identifying</b> personal
                                                                                           strengths coupled
                                                                                           with valuable
                                                                                           feedback
@@ -105,7 +105,7 @@ const Conceptual = () => {
               <div className="w-28 h-28">
                 <BallCanvas icon={vsculp}/>
                 </div>
-                <p className={`${styles.sectionSubText} text-center`} ><b>Creating</b> an ideal
+                <p className={`${styles.heroSubText} text-center`} ><b>Creating</b> an ideal
                                                                                         self blueprint and
                                                                                         crafting an
                                                                                         aspirational
@@ -121,7 +121,7 @@ const Conceptual = () => {
               <div className="w-28 h-28">
                 <BallCanvas icon={gstr}/>
                 </div>
-                <p className={`${styles.sectionSubText} text-center`} ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
+                <p className={`${styles.heroSubText} text-center`} ><b>Setting</b> concrete goals and engaging in strategic action planning.</p>
               
             </div>
               
@@ -132,7 +132,7 @@ const Conceptual = () => {
               <div className="w-28 h-28">
                 <BallCanvas icon={revol}/>
                 </div>
-                <p className={`${styles.sectionSubText} text-center`} ><b>Solidifying</b> progress and
+                <p className={`${styles.heroSubText} text-center`} ><b>Solidifying</b> progress and
                                                                                           fostering
                                                                                           adaptable
                                                                                           partnership
@@ -148,7 +148,7 @@ const Conceptual = () => {
               background: `linear-gradient(-180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
               backgroundColor: "#E3E6E0" // Setting the background color to the same color
             }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-              <h3 className={styles.sectionSubText}>
+              <h3 className={styles.heroSubText}>
                 <b>Learning Transfer</b> enacts self-guided, evidence-based activities, turning insights into practical outcomes.
               </h3>
             </div>
@@ -158,7 +158,7 @@ const Conceptual = () => {
             background: `linear-gradient(180deg, #E3E6E0, transparent)`, // Adding gradient from #E3E6E0 to transparent
             backgroundColor: "#E3E6E0" // Setting the background color to the same color
           }} className="px-sm-1 mx-sm-1 title-text text-center d-flex justify-content-center align-items-center">
-            <h3 className={styles.sectionSubText}>
+            <h3 className={styles.heroSubText}>
               <b>Tracking and Advancing</b> consistently elevates your achievements.
             </h3>
           </div>

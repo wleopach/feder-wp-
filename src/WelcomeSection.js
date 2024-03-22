@@ -50,8 +50,8 @@ const WelcomeSection = () => {
           <div className="custom-border font-mova">
                 
             <div style={{ paddingTop: '15%' }}>
-            <h1 className={styles.heroHeadText}>WELCOME!</h1>
-                  <p className={styles.sectionSubText}><b>FPS Health</b> is where science and personal transformation
+            <h2 className={`${styles.heroHeadText} ${styles.flexCenter}`}>WELCOME!</h2>
+                  <p className={`${styles.heroSubText} ${styles.paddingX}`}> <b>FPS Health</b> is where science and personal transformation
                       converge. We offer a bespoke journey towards wellness, informed by
                       medical expertise and our commitment to your holistic evolution.
                   </p>

@@ -6,27 +6,27 @@
 
 @font-face {
   font-family: 'Arenq';
-  src: url('./fonts/arenq.otf');
+  src: url('./fonts/Roboto-Regular.otf');
 }
 
 @font-face {
   font-family: 'Mova';
-  src: url('./fonts/mova.otf');
+  src: url('./fonts/Roboto-Regular.otf');
 }
 
 @font-face {
   font-family: 'Beckman';
-  src: url('./fonts/beckman.otf');
+  src: url('./fonts/Roboto-Regular.otf');
 }
 
 @font-face {
   font-family: 'Overcame Bold';
-  src: url('./fonts/overcame-bold.woff');
+  src: url('./fonts/Roboto-Bold.woff');
 }
 
 @font-face {
   font-family: 'Overcame Outline';
-  src: url('./fonts/overcame-outline.woff');
+  src: url('./fonts/Roboto-Bold.woff');
 }
 
 * {
@@ -68,7 +68,7 @@ code {
   display: block;
   width: 0;
   height: 3px;
-  background: #292929;
+  background: #ffffff;
   margin: auto;
   transition: 0.5s;
 }

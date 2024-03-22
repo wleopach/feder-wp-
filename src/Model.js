@@ -46,7 +46,7 @@ const Model = () => {
         <Row lg={3}>
             <Col lg={2} className='vertical-text' >
                 <div className="custom-border font-mova">
-                <h2 className={styles.sectionHeadText}>THE POSITIVE COACHING MODEL</h2>
+                <h3 className={styles.heroHeadText}>THE POSITIVE COACHING MODEL</h3>
               </div>
             </Col>
         
@@ -55,7 +55,7 @@ const Model = () => {
             </Col>
             <Col lg={5}> 
               <div style={{ paddingTop: '15%' }}>
-              <p className={styles.sectionSubText}><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
+              <p className={styles.heroSubText}><b>The Positive Coaching Model (PCM) </b> transcends the boundaries of conventional systems - it is a guide to
                           self-actualization that stands out in a world full of theories which often lack empirical support. PCM encourages
                           self-reflection, guides towards self-determined potential, and exclusively utilizes evidence-based strategies for
                           your success and skill development.
