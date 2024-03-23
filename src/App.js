@@ -9,7 +9,7 @@ import Join from './Joining';
 import Contact from './Contact';
 import About from './About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import styles from './styles';
 function App() {
   return (
 
@@ -29,7 +29,7 @@ function App() {
                               <div className="logo-container"> {/* New container for logo */}
                                 <img src={logo} className="App-logo" alt="logo" />
                               </div>
-                              <p>
+                              <p className={`${styles.heroHeadText} ${styles.flexCenter}`}>
                               CREATE THE LIFE YOU ENVISION
                               </p>
                             </header>
