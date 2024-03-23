@@ -29,7 +29,7 @@ function App() {
                               <div className="logo-container"> {/* New container for logo */}
                                 <img src={logo} className="App-logo" alt="logo" />
                               </div>
-                              <p className={styles.heroHeadText}>
+                              <p className={`${styles.heroHeadText} ${styles.flexCenter}`}>
                               CREATE THE LIFE YOU ENVISION
                               </p>
                             </header>
