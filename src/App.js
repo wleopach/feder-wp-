@@ -24,12 +24,12 @@ function App() {
         <>
                     <div className="relative z-0 ">
                       
-                      <div>
+                      <div className={`${styles.heroHeadText} ${styles.flexCenter}`}>
                           <header className="App-header font-mova">
                               <div className="logo-container"> {/* New container for logo */}
                                 <img src={logo} className="App-logo" alt="logo" />
                               </div>
-                              <p className={`${styles.heroHeadText} ${styles.flexCenter}`}>
+                              <p>
                               CREATE THE LIFE YOU ENVISION
                               </p>
                             </header>
